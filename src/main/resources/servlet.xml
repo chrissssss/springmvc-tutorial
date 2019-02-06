@@ -14,9 +14,6 @@
     <context:component-scan base-package="hello"/>
     <mvc:default-servlet-handler/>
 
-    <!-- You might want to try
-         class="org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver"
-     -->
     <bean id="templateResolver"
           class="org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver">
         <property name="prefix" value="/WEB-INF/thymeleaf/"/>
@@ -27,14 +24,6 @@
 
     <bean id="templateEngine" class="org.thymeleaf.spring5.SpringTemplateEngine">
         <property name="templateResolver" ref="templateResolver"/>
-        <!--
-        <property name="additionalDialects">
-            <set>
-                <bean class="org.thymeleaf.presentation.dialect.PresentationDialect"/>
-                <bean class="eionet.thymeleaf.LayoutDialect"/>
-            </set>
-        </property>
-        -->
     </bean>
 
     <bean class="org.thymeleaf.spring5.view.ThymeleafViewResolver">
