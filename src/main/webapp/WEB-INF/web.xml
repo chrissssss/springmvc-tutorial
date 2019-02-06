@@ -22,6 +22,7 @@
     <servlet-mapping>
         <servlet-name>controller</servlet-name>
         <url-pattern>/greeting</url-pattern>
+        <url-pattern>/customer</url-pattern>
     </servlet-mapping>
 
 </web-app>
