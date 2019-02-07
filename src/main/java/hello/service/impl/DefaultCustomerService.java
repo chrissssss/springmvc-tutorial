@@ -26,16 +26,16 @@ public class DefaultCustomerService implements CustomerService, InitializingBean
 
     @Override
     public void afterPropertiesSet() {
-        customerRepository.save(new Customer(1L, "Jack", 25, adressRepository.save(new Address("NANTERRE CT", "77471"))));
-        customerRepository.save(new Customer(2L, "Mary", 37, adressRepository.save(new Address("W NORMA ST", "77009"))));
-        customerRepository.save(new Customer(3L, "Peter", 18, adressRepository.save(new Address("S NUGENT AVE", "77571"))));
-        customerRepository.save(new Customer(4L, "Amos", 23, adressRepository.save(new Address("E NAVAHO TRL", "77449"))));
-        customerRepository.save(new Customer(5L, "Craig", 45, adressRepository.save(new Address("AVE N", "77587"))));
-        customerRepository.save(new Customer(6L, "Aries", 19, adressRepository.save(new Address("Broadway/Reade St, New York", "10007"))));
-        customerRepository.save(new Customer(7L, "Brice", 39, adressRepository.save(new Address("Columbus, OH 43215, USA", "43215"))));
-        customerRepository.save(new Customer(8L, "Cage", 24, adressRepository.save(new Address("Plano, TX 75074", "75074"))));
-        customerRepository.save(new Customer(9L, "Ellen", 41, adressRepository.save(new Address("Modesto, CA 95354", "95354"))));
-        customerRepository.save(new Customer(10L, "Brice", 32, adressRepository.save(new Address("Atlanta, GA 30334", "30334"))));
+        customerRepository.save(new Customer(null, "Jack", 25, adressRepository.save(new Address(null, "NANTERRE CT", "77471"))));
+        customerRepository.save(new Customer(null, "Mary", 37, adressRepository.save(new Address(null, "W NORMA ST", "77009"))));
+        customerRepository.save(new Customer(null, "Peter", 18, adressRepository.save(new Address(null, "S NUGENT AVE", "77571"))));
+        customerRepository.save(new Customer(null, "Amos", 23, adressRepository.save(new Address(null, "E NAVAHO TRL", "77449"))));
+        customerRepository.save(new Customer(null, "Craig", 45, adressRepository.save(new Address(null, "AVE N", "77587"))));
+        customerRepository.save(new Customer(null, "Aries", 19, adressRepository.save(new Address(null, "Broadway/Reade St, New York", "10007"))));
+        customerRepository.save(new Customer(null, "Brice", 39, adressRepository.save(new Address(null, "Columbus, OH 43215, USA", "43215"))));
+        customerRepository.save(new Customer(null, "Cage", 24, adressRepository.save(new Address(null, "Plano, TX 75074", "75074"))));
+        customerRepository.save(new Customer(null, "Ellen", 41, adressRepository.save(new Address(null, "Modesto, CA 95354", "95354"))));
+        customerRepository.save(new Customer(null, "Brice", 32, adressRepository.save(new Address(null, "Atlanta, GA 30334", "30334"))));
     }
 
     @Override

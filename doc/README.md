@@ -32,6 +32,14 @@ Refactoring to controllers talking to services which are using DAOs (=repositori
 
 # TODOs
 
+[TUTORIAL REPUBLIC: Bootstrap Crud Data Table For Database with Modal Form](https://www.tutorialrepublic.com/snippets/preview.php?topic=bootstrap&file=crud-data-table-for-database-with-modal-form)
+
+- [X] transfer layout from example into code
+- [ ] use one column more
+- [ ] make edit work
+- [ ] make delete work
+- [ ] put pagination in place 
+
 # Preview
 
 [Baeldung tutorial for Mapstruct use](https://www.baeldung.com/mapstruct)

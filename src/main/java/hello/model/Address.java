@@ -19,9 +19,10 @@ public class Address {
     public Address() {
     }
 
-    public Address(String street, String postcode) {
+    public Address(Long id, String street, String postcode) {
         this.street = street;
         this.postcode = postcode;
+        this.id = id;
     }
 
     public Long getId() {
