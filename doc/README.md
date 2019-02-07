@@ -25,9 +25,12 @@
 
 - [X] added customer page (thymeleaf template) based on bootstrap
 
-# TODOs
+--- 
+Refactoring to controllers talking to services which are using DAOs (=repositories)
 - [X] Moved logic from controller to service 
-- [ ] Fetch customers from JPA repository (using h2)
+- [X] Fetch customers from JPA repository (using h2)
+
+# TODOs
 
 # Preview
 
