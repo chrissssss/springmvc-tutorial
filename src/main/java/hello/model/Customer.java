@@ -1,9 +1,21 @@
 package hello.model;
 
+import javax.persistence.*;
+import java.util.Objects;
+
+@Entity
 public class Customer {
+
+    @Id
+    @GeneratedValue
     private Long id;
+
     private String name;
+
     private Integer age;
+
+    @OneToOne
+    @JoinColumn(name = "fk_address")
     private Address address;
 
     public Customer() {
@@ -49,8 +61,28 @@ public class Customer {
     }
 
     @Override
-    public String toString() {
-        return "Customer {name:" + name + ", age:" + age + ", address:" + address + "}";
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Customer customer = (Customer) o;
+        return Objects.equals(id, customer.id) &&
+                Objects.equals(name, customer.name) &&
+                Objects.equals(age, customer.age) &&
+                Objects.equals(address, customer.address);
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, age, address);
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", address=" + address +
+                '}';
+    }
 }

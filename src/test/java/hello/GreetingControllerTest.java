@@ -16,7 +16,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration
 @ContextConfiguration(locations = {"classpath*:servlet.xml"})
-public class GreetingControllerTest extends SpringControllerTest {
+public class GreetingControllerTest extends AbstractSpringControllerTest {
 
     @Test
     public void shouldReturnHelloWorld() throws Exception {

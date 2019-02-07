@@ -6,7 +6,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
-public class SpringControllerTest {
+public abstract class AbstractSpringControllerTest {
     protected MockMvc mockMvc;
     @Autowired
     private WebApplicationContext wac;
